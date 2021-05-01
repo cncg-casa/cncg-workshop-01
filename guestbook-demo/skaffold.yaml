@@ -1,0 +1,15 @@
+apiVersion: skaffold/v1alpha5
+kind: Config
+build:
+  artifacts:
+  - image: k3d-myregistry.localhost:5000/guestbook
+    context: ./guestbook-app/
+  - image: k3d-myregistry.localhost:5000/redis-slave
+    context: ./redis-slave/
+deploy:
+  kubectl:
+    manifests:
+    - ./guestbook-app/k8s/*
+    - ./redis-slave/k8s/*
+    - ./redis-master/*
+    - ./k8s-manifests/*
