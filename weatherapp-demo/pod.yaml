@@ -1,0 +1,9 @@
+apiVersion:
+kind: 
+metadata:
+  labels:
+  name: 
+spec:
+  containers:
+  - image: 
+    name: 

@@ -1,0 +1,10 @@
+apiVersion: 
+kind: 
+metadata:
+  labels:
+  name: 
+spec:
+  ports:
+  - name: 
+  selector:
+  type: 

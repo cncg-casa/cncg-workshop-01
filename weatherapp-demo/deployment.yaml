@@ -1,0 +1,16 @@
+apiVersion: 
+kind: 
+metadata:
+  labels:
+  name: 
+spec:
+  replicas: 
+  selector:
+    matchLabels:
+  template:
+    metadata:
+      labels:
+    spec:
+      containers:
+      - image: 
+        name: 
