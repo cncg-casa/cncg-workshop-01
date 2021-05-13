@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2beta15
+kind: Config
+metadata:
+  name: guestbook-app
+build:
+  artifacts:
+  - image: k3d-myregistry.localhost:5000/guestbook
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - k8s/guestbook-deployment.yaml
